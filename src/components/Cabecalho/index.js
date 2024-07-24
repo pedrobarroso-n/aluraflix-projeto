@@ -3,7 +3,7 @@ import styles from './Cabecalho.module.css';
 
 function Cabecalho() {
     return (
-        <div className={styles.container}>
+        <header className={styles.container}>
             <img src='/images/logo.png' alt='Logo do projeto react AluraFlix' />
             <nav>
                 <ul className={styles.links}>
@@ -19,7 +19,7 @@ function Cabecalho() {
                     </li>
                 </ul>
             </nav>
-        </div>
+        </header> 
     )
 }
 

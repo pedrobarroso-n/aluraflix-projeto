@@ -1,5 +1,5 @@
 function NovoVideo() {
-    return 'Opa'
+    return 'Novo Vídeo'
 }
 
 export default NovoVideo;

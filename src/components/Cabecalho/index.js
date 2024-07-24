@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
-import styles from './NavBar.module.css';
+import styles from './Cabecalho.module.css';
 
-function NavBar() {
+function Cabecalho() {
     return (
         <div className={styles.container}>
-            <img src='' />
+            <img src='/images/logo.png' alt='Logo do projeto react AluraFlix' />
             <nav>
-                <ul>
-                    <li>
+                <ul className={styles.links}>
+                    <li> 
                         <Link to='./'>
                             Home
                         </Link>
@@ -23,4 +23,4 @@ function NavBar() {
     )
 }
 
-export default NavBar
+export default Cabecalho;

@@ -7,7 +7,7 @@ import Rodape from "components/Rodape";
 function AppRoutes() {
     return (
         <BrowserRouter>
-            <Cabecalho ativo={true}/>
+            <Cabecalho />
             <Routes>
                 <Route path="/" element={<Home />} />   
                 <Route path="/novovideo" element={<NovoVideo />} />

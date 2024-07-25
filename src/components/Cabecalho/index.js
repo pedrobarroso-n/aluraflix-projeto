@@ -2,19 +2,39 @@ import { Link } from 'react-router-dom';
 import styles from './Cabecalho.module.css';
 
 function Cabecalho() {
+/*
+    const icons = document.querySelectorAll("imag.icons");
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+    useEffect(()=> {
+        const screenResize = ()=> { window.innerWidth < 700 ? setScreenWidth("block") : setScreenWidth("none"); }
+
+        window.addEventListener("resize", screenResize);
+
+        return ()=> { window.removeEventListener("resize", screenResize); }
+    }, []);
+*/ 
     return (
         <header className={styles.container}>
             <img src='/images/logo.png' alt='Logo do projeto react AluraFlix' />
             <nav>
                 <ul className={styles.links}>
-                    <li> 
+                    <li>  
                         <Link to='./'>
-                            Home
+                            <img className={styles.icons}
+                                src="/images/home.png"
+                                alt='icone da aba Home do AluraFlix'
+                            />
+                            <p>Home</p>
                         </Link>
                     </li>
                     <li>
                         <Link to='./novovideo'>
-                            Novo Vídeo
+                            <img className={styles.icons}
+                                src="/images/novovideo.png"
+                                alt='icone da aba Novo Vídeo do AluraFlix'
+                            />
+                             <p>Novo Vídeo</p>
                         </Link>
                     </li>
                 </ul>

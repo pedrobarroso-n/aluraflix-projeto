@@ -12,6 +12,7 @@
 .container img {
     display: block;
     height: fit-content;
+    width: fit-content;
 } 
 
 .links {
@@ -31,13 +32,20 @@
     font: 900 20px var(--fonte-principal);
     color: var(--branco);
 }
-
+ 
 .links .icons {
     display: none;
 }
 
 @media screen and (max-width: 700px) {
     .container img {
+        display: none;
+    }
+
+    .links a {
+        border: none;
+    }
+    .links p {
         display: none;
     }
 

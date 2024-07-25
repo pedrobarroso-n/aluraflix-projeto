@@ -1,6 +1,8 @@
+import Banner from "components/Banner";
+
 function Home() {
     return (
-        'Home'
+        <Banner />
     )
 }
 

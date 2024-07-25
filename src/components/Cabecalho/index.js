@@ -1,7 +1,14 @@
 import { Link } from 'react-router-dom';
-import styles from './Cabecalho.module.css';
+import styles from './Cabecalho.module.css';;
 
 function Cabecalho() {
+
+    const themes = {
+        border: '2px solid var(--azul)',
+        boxShadow: '0px 0px 12px 4px var(--azul) inset',
+        color: 'var(--azul)',
+    }
+
 /*
     const icons = document.querySelectorAll("imag.icons");
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);

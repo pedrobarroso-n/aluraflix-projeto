@@ -6,6 +6,9 @@
   --azul: #2271D1;
   --branco: #FFFFFF;
   --fonte-principal: "Source Sans 3", sans-serif;
+  --frontend: #6BD1FF;
+  --backend: ;
+  --mobile: ;
 }
 
 * {
@@ -16,6 +19,7 @@
 
 a {
   text-decoration: none;
+  cursor: pointer;
  }
 
 img {

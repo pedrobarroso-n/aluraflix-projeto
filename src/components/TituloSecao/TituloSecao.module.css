@@ -3,7 +3,9 @@ h2 {
     height: 70px;
     color: var(--branco);
     font-family: var(--fonte-principal);
-    font-size: 48px;
-    border-radius: 16px;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 72px;
     text-align: center;
+    border-radius: 15px;
 }

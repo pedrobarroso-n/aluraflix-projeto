@@ -3,7 +3,8 @@
     height: 125px;
     padding: 0 40px;
     border-bottom: 4px solid var(--azul);
-    background-color: var(--preto-home);
+    background-color: var(--preto-forte);
+    box-shadow: 0px 5px 29px 0px var(--azul-sombra);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,21 +33,24 @@
     font: 900 20px var(--fonte-principal);
     color: var(--branco);
 }
+
+.links .ativo a {
+    border: 2px solid var(--azul);
+    box-shadow: 0px 0px 12px 4px var(--azul) inset;
+    color: var(--azul);
+    background-color: var(--preto-forte);
+}
  
-.links .icons {
-    display: none;
+.links .icons { display: none;
 }
 
 @media screen and (max-width: 700px) {
-    .container img {
-        display: none;
+    .container img { display: none;
     }
 
-    .links a {
-        border: none;
+    .links a { border: none;
     }
-    .links p {
-        display: none;
+    .links p { display: none;
     }
 
     .links .icons {

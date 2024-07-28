@@ -6,7 +6,13 @@ function Banner() {
     return (
         <section className={styles.container}>
             <div className={styles.texto}>
-                <TituloSecao color='#6BD1FF'>
+                <TituloSecao 
+                    backgroundColor='#6BD1FF' 
+                    fontSize='48px' 
+                    width='296.82px' 
+                    height='92px' 
+                    lineHeight='96px'
+                >
                     FRONT END
                 </TituloSecao>
                 <h1>

@@ -1,32 +1,21 @@
 import { Link } from 'react-router-dom';
-import styles from './Cabecalho.module.css';;
+import styles from './Cabecalho.module.css';
 
 function Cabecalho() {
 
-    const themes = {
-        border: '2px solid var(--azul)',
-        boxShadow: '0px 0px 12px 4px var(--azul) inset',
-        color: 'var(--azul)',
-    }
+    const clickLink = ()=> {
+        const itens = document.querySelectorAll('li');
+        itens.forEach(item => 
+            item.className === '' ? item.className = 'Cabecalho_ativo__TiOnV' : item.className = ''
+        )
+    } 
 
-/*
-    const icons = document.querySelectorAll("imag.icons");
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
-    useEffect(()=> {
-        const screenResize = ()=> { window.innerWidth < 700 ? setScreenWidth("block") : setScreenWidth("none"); }
-
-        window.addEventListener("resize", screenResize);
-
-        return ()=> { window.removeEventListener("resize", screenResize); }
-    }, []);
-*/ 
     return (
         <header className={styles.container}>
             <img src='/images/logo.png' alt='Logo do projeto react AluraFlix' />
             <nav>
                 <ul className={styles.links}>
-                    <li>  
+                    <li className={styles.ativo} onClick={clickLink}>  
                         <Link to='./'>
                             <img className={styles.icons}
                                 src="/images/home.png"
@@ -35,7 +24,7 @@ function Cabecalho() {
                             <p>Home</p>
                         </Link>
                     </li>
-                    <li>
+                    <li onClick={clickLink}>
                         <Link to='./novovideo'>
                             <img className={styles.icons}
                                 src="/images/novovideo.png"

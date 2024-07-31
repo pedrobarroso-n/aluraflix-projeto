@@ -5,9 +5,9 @@ function Cabecalho() {
 
     const clickLink = ()=> {
         const itens = document.querySelectorAll('li');
-        itens.forEach(item => 
-            item.className === '' ? item.className = 'Cabecalho_ativo__TiOnV' : item.className = ''
-        )
+        itens.forEach(item => {
+            item.className === '' ? item.className = styles.ativo : item.className = '';
+        })
     } 
 
     return (

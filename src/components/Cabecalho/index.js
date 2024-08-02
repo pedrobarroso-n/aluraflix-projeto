@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
 import styles from './Cabecalho.module.css';
+import { Link } from 'react-router-dom';
+import Botao from 'components/Botao';
 
 function Cabecalho() {
     return (
@@ -9,26 +10,18 @@ function Cabecalho() {
                 <ul className={styles.links}>
                     <li>  
                         <Link to='./'>
-                            <img 
-                                className={styles.icons}
-                                src="/images/icons/home.png"
-                                alt='icone da aba Home do AluraFlix'
-                            />
-                            <p>
+                            <Botao icone={'/images/icons/home.png'}>
                                 Home
-                            </p>
-                        </Link></li>
+                            </Botao>
+                        </Link>
+                    </li>
                     <li>
                         <Link to='./novovideo'>
-                            <img 
-                                className={styles.icons}
-                                src="/images/icons/novovideo.png"
-                                alt='icone da aba Novo Vídeo do AluraFlix'
-                            />
-                            <p>
+                            <Botao icone={'/images/icons/novovideo.png'}>
                                 Novo Vídeo
-                            </p>
-                        </Link></li>
+                            </Botao>
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         </header> 

@@ -1,0 +1,23 @@
+.botao {
+    height: 54px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid var(--branco);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botao img {
+    height: fit-content;
+    width: fit-content;
+}
+
+.botao p {
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+}

@@ -6,6 +6,7 @@
   --azul: #2271D1;
   --azul-fraco: #2271d13d;
   --azul-sombra: #2271D1B2;
+  --efeito-banner: #0012338F;
   --branco: #FFFFFF;
   --fonte-principal: "Source Sans 3", sans-serif;
   --fonte-secundaria: "Roboto", sans-serif;
@@ -21,7 +22,10 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    background-color: transparent;
 }
+
+/* Normalize Css */
 
 body{
     font-size: 100%;

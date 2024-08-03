@@ -10,14 +10,14 @@ function Cabecalho() {
                 <ul className={styles.links}>
                     <li>  
                         <Link to='./'>
-                            <Botao icone={'/images/icons/home.png'}>
+                            <Botao>
                                 Home
                             </Botao>
                         </Link>
                     </li>
                     <li>
                         <Link to='./novovideo'>
-                            <Botao icone={'/images/icons/novovideo.png'}>
+                            <Botao>
                                 Novo Vídeo
                             </Botao>
                         </Link>

@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border: 2px solid var(--branco);
+    border: 2px solid var(--itens-borda-cor);
     border-radius: 10px;
     cursor: pointer;
 }
@@ -15,9 +15,10 @@
 }
 
 .botao p {
-    color: var(--branco);
+    color: var(--fonte-cor);
     font-family: var(--fonte-principal);
     font-weight: 900;
     font-size: 20px;
     line-height: 24px;
+    text-transform: uppercase;
 }

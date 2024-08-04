@@ -1,5 +1,9 @@
+import Formulario from "components/Formulario";
+
 function NovoVideo() {
-    return 'Novo Vídeo'
+    return (
+        <Formulario />
+    )
 }
 
 export default NovoVideo;
